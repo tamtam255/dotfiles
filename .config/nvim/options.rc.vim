@@ -14,6 +14,7 @@ set sidescrolloff=16    "左右16文字の視界を確保
 set sidescroll=1        "左右スクロールは一文字ずつ行う
 set title       "ターミナルのタイトルをセット
 set number      "行番号
+set noswapfile  "swapfileを作らない
 
 if has('nvim')
   set clipboard+=unnamedplus

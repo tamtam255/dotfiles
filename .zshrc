@@ -18,7 +18,6 @@ if [[ -f ~/.zplug/init.zsh ]]; then
   zplug "zsh-users/zsh-autosuggestions"
   zplug "zsh-users/zsh-completions"
   zplug "zsh-users/zsh-syntax-highlighting"
-  zplug "zsh-users/zsh-history-substring-search"
   zplug "chrissicool/zsh-256color"
   zplug "themes/steeef", from:oh-my-zsh
   zstyle ':completion:*' menu select
