@@ -19,7 +19,9 @@ if [[ -f ~/.zplug/init.zsh ]]; then
   zplug "zsh-users/zsh-completions"
   zplug "zsh-users/zsh-syntax-highlighting"
   zplug "chrissicool/zsh-256color"
-  zplug "themes/steeef", from:oh-my-zsh
+  # zplug "themes/steeef", from:oh-my-zsh
+  # zplug "themes/rkj-repos", from:oh-my-zsh
+  zplug "themes/ys", from:oh-my-zsh
   zstyle ':completion:*' menu select
   #zplug "mollifier/anyframe"
 
