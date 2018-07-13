@@ -1,0 +1,82 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# ==================================================
+# color
+# ==================================================
+
+[[plugins]]
+repo = 'itchyny/landscape.vim'
+hook_add = '''
+au MyAutoCmd VimEnter * nested colorscheme landscape
+'''
+
+
+# ==========================================================
+# basic
+# ==========================================================
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+hook_add = '''
+source $CONFIG/nvim/plugins/indent-guides.rc.vim
+'''
+
+
+[[plugins]]
+repo = 'scrooloose/nerdcommenter'
+hook_add = '''
+source $CONFIG/nvim/plugins/nerdcomenter.rc.vim
+'''
+
+
+# ==========================================================
+# linter
+# ==========================================================
+
+[[plugins]]
+repo = 'w0rp/ale'
+hook_add = '''
+source $CONFIG/nvim/plugins/ale.rc.vim
+'''
+
+
+
+# ==========================================================
+# powerline
+# ==========================================================
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+depends = ['tagbar', 'vim-fugitive']
+hook_add = '''
+source $CONFIG/nvim/plugins/airline.rc.vim
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+depends = 'vim-airline'
+hook_add = '''
+let g:airline_theme='badwolf'
+'''
+
+[[plugins]]
+repo = 'gcmt/taboo.vim'
+depends = 'vim-airline'
+hook_add = '''
+if !has('nvim')
+  set guioptions-=e
+  set sessionoptions+=tabpages,globals
+endif
+let g:taboo_tab_format=' t%N %f%m '
+let g:taboo_tabline = 0
+'''
+
+
+
+# ==========================================================
+# 
+# ==========================================================
