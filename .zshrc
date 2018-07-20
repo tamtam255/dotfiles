@@ -48,9 +48,8 @@ fi
 XDG_CONFIG_HOME='~/.config/'
 
 alias nv='nvim'
-alias relogin='exec $SHELL -l'
 alias py='python3'
-alias ls="ls -GF"
+alias relogin='exec $SHELL -l'
 
 if [ $SHLVL = 1 ]; then
   tmux
@@ -70,6 +69,7 @@ zstyle ':completion:*' completer _complete _match _approximate
 zstyle ':completion:*:match:*' original only
 zstyle ':completion:*:approximate:*' max-errors 1 numeric
 
+zstyle ':completion:*' list-colors di=34 ln=35 ex=31
 
 # if [ "$(uname)" == "Darwin" ]; then
 #   OS='Mac'
@@ -92,8 +92,10 @@ case ${OSTYPE} in
     alias vi='/usr/local/bin/vim'
     alias vim='/Applications/MacVim.app/Contents/bin/vim' 
     # alias vi='/Applications/MacVim.app/Contents/bin/vim'
+    alias ls="ls -G"
     ;;
   linux*)
+    alias ls="ls --color"
     ;;
 esac
 
