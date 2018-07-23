@@ -1,6 +1,6 @@
 set expandtab    "tabを半角スペースで挿入
 set tabstop=2    "tab幅をスペース4つ分にする
-set ambiwidth=double    "全角文字の幅を2に固定
+"set ambiwidth=double    "全角文字の幅を2に固定
 set shiftwidth=2 "自動インデントでずれる幅
 set softtabstop=2 "連続した空白に対してタブキーやバックスペースキーでカーソルが動く幅
 set autoindent "改行時に前の行のインデントを継続する

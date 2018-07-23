@@ -30,6 +30,18 @@ source $CONFIG/nvim/plugins/nerdcomenter.rc.vim
 '''
 
 
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+depends = ['vim-devicons']
+hook_add = '''
+source $CONFIG/nvim/plugins/nerdtree.rc.vim
+'''
+
+
 # ==========================================================
 # linter
 # ==========================================================
@@ -51,7 +63,7 @@ repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline'
-depends = ['tagbar', 'vim-fugitive']
+depends = ['tagbar', 'vim-fugitive', 'vim-devicons']
 hook_add = '''
 source $CONFIG/nvim/plugins/airline.rc.vim
 '''

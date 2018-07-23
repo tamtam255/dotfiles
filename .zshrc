@@ -20,11 +20,27 @@ if [[ -f ~/.zplug/init.zsh ]]; then
   zplug "zsh-users/zsh-syntax-highlighting", defer:2
   zplug "chrissicool/zsh-256color"
   # zplug "themes/steeef", from:oh-my-zsh
-  zplug "themes/rkj-repos", from:oh-my-zsh
+  # zplug "themes/rkj-repos", from:oh-my-zsh
   # zplug "themes/ys", from:oh-my-zsh
   # zplug "themes/tjkirch", from:oh-my-zsh
+  # zplug "halfo/lambda-mod-zsh-theme", as:theme
+  # zplug "skylerlee/zeta-zsh-theme", as:theme
+  # zplug "eendroroy/alien-minimal"
+  # zplug "eendroroy/alien"
+  zplug "dannynimmo/punctual-zsh-theme", as:theme
+  # zplug denysdovhan/spaceship-zsh-theme, use:spaceship.zsh, from:github, as:theme
+  zplug "mafredri/zsh-async"
+  # zplug "sindresorhus/pure"
   zstyle ':completion:*' menu select=1
   #zplug "mollifier/anyframe"
+  # ZSH_THEME="lambda-mod"
+  PUNCTUAL_PROMPT="$";
+  PUNCTUAL_TIMESTAMP_BOLD="true";
+  PUNCTUAL_USER_BOLD="true";
+  PUNCTUAL_ROOT_USER_BOLD="true";
+  PUNCTUAL_HOSTNAME_BOLD="true";
+  PUNCTUAL_CURRENT_DIR_BOLD="true";
+  PUNCTUAL_GIT_BOLD="true";
 
 
   # if ! zplug check --verbose; then
