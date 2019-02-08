@@ -71,7 +71,6 @@ alias py='python3'
 alias relogin='exec $SHELL -l'
 
 if [ $SHLVL = 1 ]; then
-  tmux
   if [ -d ~/.tmux ]; then
     ;
   else
@@ -84,6 +83,7 @@ if [ $SHLVL = 1 ]; then
       echo "Tmux Plugin Manager is not supported in this version of tmux"
     fi
   fi
+  tmux
 fi
 
 # Ctrl-PとCtrl-Nで前方一致検索
