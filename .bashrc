@@ -1,4 +1,5 @@
 # 解凍コマンド
+# https://wiki.archlinux.org/index.php/Bash/Functions#Extract
 extract() {
     local c e i
 
