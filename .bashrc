@@ -1,3 +1,8 @@
+# alias
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+
 # 解凍コマンド
 # https://wiki.archlinux.org/index.php/Bash/Functions#Extract
 extract() {

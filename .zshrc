@@ -63,6 +63,9 @@ fi
 
 XDG_CONFIG_HOME='~/.config/'
 
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
 alias nv='nvim'
 alias py='python3'
 alias relogin='exec $SHELL -l'
