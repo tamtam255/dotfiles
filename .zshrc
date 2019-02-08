@@ -72,6 +72,18 @@ alias relogin='exec $SHELL -l'
 
 if [ $SHLVL = 1 ]; then
   tmux
+  if [ -d ~/.tmux ]; then
+    ;
+  else
+    TMUX_VERSION=$(tmux -V | awk '{print $2}' | awk -F. '{printf "%2d%02d", $1,$2}')
+    if [ "$TMUX_VERSION" -ge 109 ]; then
+      echo "Installing Tmux Plugin Manager."
+      git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+      tmux source ~/.tmux.conf
+    else
+      echo "Tmux Plugin Manager is not supported in this version of tmux"
+    fi
+  fi
 fi
 
 # Ctrl-PとCtrl-Nで前方一致検索
