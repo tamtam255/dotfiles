@@ -1,0 +1,2 @@
+set-option -g status-right '#{wifi_ssid} #{wifi_icon} #{wifi_strength} | #{battery_status_fg} #{battery_icon} #{battery_percentage} #{battery_remain} #[default][%Y-%m-%d(%a) %H:%M:%S]'
+
