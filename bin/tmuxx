@@ -46,5 +46,6 @@ else
         # else
         #     tmux new-session && echo "tmux created new session"
         # fi
+        tmux new-session && echo "tmux created new session"
     fi
 fi
