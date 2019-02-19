@@ -1,7 +1,21 @@
 #!/bin/bash
 # 大いに参考にさせていただきました⬇
 # https://github.com/b4b4r07/dotfiles/blob/master/etc/install
-
+#
+# See the README for documentation.
+# https://github.com/b4b4r07/dotfiles
+# 
+# Copyright (c) 2014 "BABAROT" aka @b4b4r07
+# Licensed under the MIT license.
+#                                    
+#         _ _        _       _       
+#        (_) |      | |     | |      
+#  __   ___| |_ __ _| |  ___| |__    
+#  \ \ / / | __/ _` | | / __| '_ \   
+#   \ V /| | || (_| | |_\__ \ | | |  
+#    \_/ |_|\__\__,_|_(_)___/_| |_|  
+#                                    
+#                                    
 # PLATFORM is the environment variable that
 # retrieves the name of the running platform
 export PLATFORM
