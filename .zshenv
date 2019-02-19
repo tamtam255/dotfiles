@@ -5,4 +5,4 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=1000000
 export SAVEHIST=1000000
 
-export DOTPATH=$(pwd)
+export DOTPATH=${0:A:h}
