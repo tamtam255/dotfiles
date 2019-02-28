@@ -148,3 +148,6 @@ case ${OSTYPE} in
     ;;
 esac
 
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"

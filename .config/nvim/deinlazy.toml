@@ -1,0 +1,47 @@
+[[plugins]]
+repo = 'zchee/deoplete-zsh'
+on_ft = ['zsh', 'sh']
+
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+depends = 'context_filetype.vim'
+on_event = 'InsertEnter'
+hook_source = '''
+source $CONFIG/nvim/plugins/deoplete.rc.vim
+call deoplete#enable()
+'''
+on_i = 1
+
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+depends = ['neosnippet-snippets', 'context_filetype.vim']
+on_event = 'InsertCharPre'
+on_ft = 'snippet'
+on_i = 1
+hook_source = '''
+  " imap <silent><C-s>  <Plug>(neosnippet_jump_or_expand)
+  " smap <silent><C-s>  <Plug>(neosnippet_jump_or_expand)
+  " xmap <silent><C-s>  <Plug>(neosnippet_expand_target)
+  let g:neosnippet#enable_snipmate_compatibility = 1
+  let g:neosnippet#enable_completed_snippet = 1
+  " let g:neosnippet#enable_complete_done = 1
+  let g:neosnippet#expand_word_boundary = 1
+  let g:neosnippet#snippets_directory = '~/.vim/snippets'
+'''
+
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+
+[[plugins]]
+repo = 'Shougo/neco-vim'
+on_ft = 'vim'
+
+
