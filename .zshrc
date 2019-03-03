@@ -137,9 +137,9 @@ case ${OSTYPE} in
   darwin*)
     export PATH=$PATH:/Users/tamtam/.nodebrew/current/bin
     source /sw/bin/init.sh
-    # alias vim='/usr/local/bin/vim'
+    alias vim='/usr/local/bin/vim'
     alias vi='/usr/local/bin/vim'
-    alias vim='/Applications/MacVim.app/Contents/bin/vim' 
+    # alias vim='/Applications/MacVim.app/Contents/bin/vim' 
     # alias vi='/Applications/MacVim.app/Contents/bin/vim'
     alias ls="ls -G"
     ;;

@@ -19,4 +19,7 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=1000000
 export SAVEHIST=1000000
 
-export DOTPATH=${0:A:h}
+# export DOTPATH=${0:A:h}
+if [ -z "${DOTPATH:-}" ]; then
+    DOTPATH=~/.dotfiles; export DOTPATH
+fi
