@@ -1,4 +1,4 @@
-#!/usr/local/bin/zsh
+#!/bin/zsh
 
 # load some utilities
 source $DOTPATH/etc/install || exit 1
