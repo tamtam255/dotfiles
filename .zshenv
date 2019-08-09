@@ -1,4 +1,4 @@
-export PATH=~/bin:"$PATH"
+# export PATH=~/bin:"$PATH"
 
 # if [[ -z $DOTPATH ]]; then
 #     _get_dotpath() {
