@@ -136,19 +136,19 @@ zstyle ':completion:*' list-colors di=34 ln=35 ex=31
 case ${OSTYPE} in
   darwin*)
     export PATH=$PATH:/Users/tamtam/.nodebrew/current/bin
-    source /sw/bin/init.sh
+    # source /sw/bin/init.sh
     alias vim='/usr/local/bin/vim'
     alias vi='/usr/local/bin/vim'
     # alias vim='/Applications/MacVim.app/Contents/bin/vim' 
     # alias vi='/Applications/MacVim.app/Contents/bin/vim'
     alias ls="ls -G"
+    eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
+    export PATH="/usr/local/opt/sqlite/bin:$PATH"
+    export PATH="/usr/local/opt/ruby/bin:$PATH"
+    if which plenv > /dev/null; then eval "$(plenv init -)"; fi
     ;;
   linux*)
     alias ls="ls --color"
     ;;
 esac
 
-eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-if which plenv > /dev/null; then eval "$(plenv init -)"; fi
