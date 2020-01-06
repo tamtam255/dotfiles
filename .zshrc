@@ -135,8 +135,11 @@ zstyle ':completion:*' list-colors di=34 ln=35 ex=31
 
 case ${OSTYPE} in
   darwin*)
+    # for nodebrew
     export PATH=$PATH:/Users/tamtam/.nodebrew/current/bin
-    # source /sw/bin/init.sh
+    # for fink
+    source /opt/sw/bin/init.sh
+    # for vim
     alias vim='/usr/local/bin/vim'
     alias vi='/usr/local/bin/vim'
     # alias vim='/Applications/MacVim.app/Contents/bin/vim' 
